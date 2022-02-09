@@ -1,0 +1,11 @@
+ //image, name, description, tagline, food pairing and brewer tips.
+ <div class="random-beers">
+    {{#each rdmBeersArr}}
+        <p>{{name}}</p>
+        <p>{{description}}</p>
+        <p>{{tagline}}</p>
+        <p>{{food_pairing}}</p>
+        <p>{{brewers_tips}}</p>
+        <img src="{{image_url}}" alt="">
+    {{/each}}
+</div>
