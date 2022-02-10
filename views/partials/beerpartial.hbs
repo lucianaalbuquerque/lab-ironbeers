@@ -1,8 +1,5 @@
-    {{#each beersArr}}
-        <img src="{{image_url}}" alt="">
-        <a class="name" href="/detailed">{{name}}</a>
+        <img src="{{this.image_url}}" alt="">
+        <a class="name" href="/beers/beer-{{this.id}}">{{this.name}}</a>
          {{!-- NAME</a>GET THE BEER ID --}}
-        <p class="tagline">{{tagline}}</p>
-        <p>Description: {{description}}</p>
-        
-    {{/each}}
+        <p class="tagline">{{this.tagline}}</p>
+        <p>Description: {{this.description}}</p>

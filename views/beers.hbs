@@ -1,5 +1,7 @@
 <div class="list">
-    <div class="beer">
-        {{> beerpartial}}
-    </div>
+    {{#each beersArr}}
+        <div class="beer">
+            {{> beerpartial this}}
+        </div>
+    {{/each}}
 </div>
