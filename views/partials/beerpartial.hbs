@@ -1,5 +1,7 @@
-        <img src="{{this.image_url}}" alt="">
+        <div class="beer-img" style="background-image: url({{this.image_url}}); background-size: contain; background-repeat: no-repeat; height: 300px; width: 100px;">
+        </div>
+        <div class="info">
         <a class="name" href="/beers/beer-{{this.id}}">{{this.name}}</a>
-         {{!-- NAME</a>GET THE BEER ID --}}
         <p class="tagline">{{this.tagline}}</p>
-        <p>Description: {{this.description}}</p>
+        <p>{{this.description}}</p>
+        </div>

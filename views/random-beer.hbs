@@ -1,8 +1,10 @@
 <div class="beer">     
     {{#each beersArr}}
         {{> beerpartial this}}
+        <div class="info">
         <p>Food Pairing: {{food_pairing}}</p>
         <p>Brewer Tips: {{brewers_tips}}</p>
+        </div>
     {{/each}}
 </div>
 
